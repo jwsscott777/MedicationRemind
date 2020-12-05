@@ -11,7 +11,7 @@ import SwiftUI
 struct MedicationRemindApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: PillReminderViewModel())
         }
     }
 }
