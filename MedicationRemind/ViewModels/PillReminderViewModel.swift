@@ -6,6 +6,7 @@ import Foundation
 
 /// Main view model to bind the view to the model and holds the business logic of the app
 class PillReminderViewModel: ObservableObject {
+   
     @Published private var navigationModel = NavigationModel(title: "Today", subtitle: "No medication saved", style: .reminders)
     @Published private var addPillViewModel = AddPillViewModel()
     
@@ -13,7 +14,7 @@ class PillReminderViewModel: ObservableObject {
     private func changeNavigationModelContent() {
         let style = navigationModel.style
         navigationModel.title = style == .addPillReminder ? "Add Medication" : "Today"
-        navigationModel.subtitle = style == .addPillReminder ? "Just a few taps" : progressSubtitle
+        navigationModel.subtitle = style == .addPillReminder ? "Just a few taps below" : progressSubtitle
     }
     
     /// Navigation content
@@ -28,7 +29,7 @@ class PillReminderViewModel: ObservableObject {
     var navigationStyle: NavigationViewStyle {
         navigationModel.style
     }
-    
+   
     /// Reminders details
     var reminders = [ReminderModel]()
 
@@ -37,7 +38,7 @@ class PillReminderViewModel: ObservableObject {
     }
     
     var progressSubtitle: String {
-        hasReminders ? "It's time for your medication" : "No medication saved"
+        hasReminders ? "It's time for your meds" : "No medication saved"
     }
     
     func reminders(forInterval interval: DailyTimeInterval) -> [ReminderModel] {
@@ -65,7 +66,7 @@ class PillReminderViewModel: ObservableObject {
         addPillViewModel
     }
     
-        
+   
     // MARK: - User's actions
     func getUpdatedRemindersList() {
         if navigationStyle == .reminders {
@@ -94,7 +95,7 @@ class PillReminderViewModel: ObservableObject {
         navigationModel.style = .reminders
         getUpdatedRemindersList()
     }
-    
+   
     func pillReminderSelected(id: String) {
         guard let index = reminders.firstIndex(where: { $0.id == id }) else { return }
         reminders[index].markPillTaken()

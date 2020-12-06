@@ -59,9 +59,11 @@ class AddPillViewModel: ObservableObject {
     
     func didSelectDailyInterval(_ interval: DailyTimeInterval) {
         addPillModel.selectedDailyInterval = interval
+        #if !os(watchOS)
         didSelectDailyDate(date: nil)
+        #endif
     }
-    
+    #if !os(watchOS)
     func didSelectDailyDate(date: Date?) {
         if addPillModel.selectedDailyInterval == .morning {
             addPillModel.morningDate = date?.keepTimeOnly
@@ -71,6 +73,7 @@ class AddPillViewModel: ObservableObject {
             addPillModel.eveningDate = date?.keepTimeOnly
         }
     }
+    #endif
     
     func updatePillDosage(_ dosage: Int) {
         addPillModel.pillDosage = dosage
@@ -84,10 +87,12 @@ class AddPillViewModel: ObservableObject {
         if addPillModel.isValid {
             addPillModel.savePillReminder()
             addedPill = true
+            #if !os(watchOS)
             requestPushNotificationsPermissions()
+            #endif
         } else { addedPill = false }
     }
-    
+    #if !os(watchOS)
     private func requestPushNotificationsPermissions() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
             if !granted || error != nil {
@@ -95,4 +100,5 @@ class AddPillViewModel: ObservableObject {
             }
         }
     }
+    #endif
 }

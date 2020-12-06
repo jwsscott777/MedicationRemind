@@ -20,8 +20,20 @@
 		0553D670257B11C4007BD74B /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553D66F257B11C4007BD74B /* CustomNavigationView.swift */; };
 		0553D673257B11CC007BD74B /* NoRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553D672257B11CC007BD74B /* NoRemindersView.swift */; };
 		0553D676257B11D4007BD74B /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553D675257B11D4007BD74B /* RemindersListView.swift */; };
-		0553D679257B122F007BD74B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0553D678257B122F007BD74B /* Base.lproj */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0553D6A2257C402D007BD74B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0553D643257B0F01007BD74B /* MedicationRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicationRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +51,6 @@
 		0553D66F257B11C4007BD74B /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		0553D672257B11CC007BD74B /* NoRemindersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoRemindersView.swift; sourceTree = "<group>"; };
 		0553D675257B11D4007BD74B /* RemindersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
-		0553D678257B122F007BD74B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +83,6 @@
 		0553D645257B0F01007BD74B /* MedicationRemind */ = {
 			isa = PBXGroup;
 			children = (
-				0553D678257B122F007BD74B /* Base.lproj */,
 				0553D668257B11A2007BD74B /* Views */,
 				0553D661257B114C007BD74B /* ViewModels */,
 				0553D660257B10E1007BD74B /* Models */,
@@ -133,6 +143,7 @@
 				0553D63F257B0F01007BD74B /* Sources */,
 				0553D640257B0F01007BD74B /* Frameworks */,
 				0553D641257B0F01007BD74B /* Resources */,
+				0553D6A2257C402D007BD74B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -181,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0553D64E257B0F02007BD74B /* Preview Assets.xcassets in Resources */,
-				0553D679257B122F007BD74B /* Base.lproj in Resources */,
 				0553D64B257B0F02007BD74B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -316,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +346,7 @@
 				DEVELOPMENT_TEAM = 6C7TWR6BW7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MedicationRemind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +368,7 @@
 				DEVELOPMENT_TEAM = 6C7TWR6BW7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MedicationRemind/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

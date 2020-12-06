@@ -1,5 +1,5 @@
 
-
+import SwiftUI
 import Foundation
 
 /// Main model to configure the navigation view

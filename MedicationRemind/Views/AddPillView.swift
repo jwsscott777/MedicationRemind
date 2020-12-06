@@ -128,11 +128,11 @@ struct AddPillView: View {
     var pickerFooterView: some View {
         VStack {
             if pickerType != .none {
-                Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2))
+                Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.217702227))
                     .edgesIgnoringSafeArea(.top)
                     .onTapGesture { self.pickerType = .none }
                 ZStack {
-                    Color.white.layoutPriority(0).frame(width: UIScreen.main.bounds.width).offset(x: 0, y: -10)
+                    Color(#colorLiteral(red: 0.3350612819, green: 0.4195061922, blue: 0.1846913397, alpha: 1)).layoutPriority(0).frame(width: UIScreen.main.bounds.width).offset(x: 0, y: -10)
                     if pickerType == .dateTime {
                         dailyTimePicker.layoutPriority(1)
                     }
@@ -149,7 +149,9 @@ struct AddPillView: View {
         }), in: viewModel.dateRange, displayedComponents: .hourAndMinute) {
             EmptyView()
         }
+        
         .labelsHidden()
+        .datePickerStyle(WheelDatePickerStyle())
     }
 }
 

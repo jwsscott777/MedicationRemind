@@ -40,7 +40,9 @@ struct PlusCloseButton: View {
     @ObservedObject var viewModel: PillReminderViewModel
     private let buttonSize: CGFloat = 35
     private let buttonWeight: CGFloat = 7
+    
     let generator = UINotificationFeedbackGenerator()
+ 
     
     var body: some View {
         let navigationStyle = viewModel.navigationStyle
@@ -95,7 +97,7 @@ struct DropDownSelector: View {
                         .padding(.leading, 8)
                         .font(Font.custom("Helvetica", size: 16))
                         .minimumScaleFactor(0.3)
-                        .keyboardType(.numberPad)
+                       
                     Triangle()
                         .rotationEffect(Angle(degrees: 180))
                         .frame(width: 15, height: 12)
