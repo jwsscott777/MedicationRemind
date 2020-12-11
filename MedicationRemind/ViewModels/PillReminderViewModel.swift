@@ -7,20 +7,23 @@ import Foundation
 /// Main view model to bind the view to the model and holds the business logic of the app
 class PillReminderViewModel: ObservableObject {
    
-    @Published private var navigationModel = NavigationModel(title: "Today", subtitle: "No medication saved", style: .reminders)
+    
+    @Published private var navigationModel = NavigationModel(title: NSLocalizedString("Today", comment: ""), subtitle: "No medication saved", style: .reminders)
     @Published private var addPillViewModel = AddPillViewModel()
     
     /// Change the content for navigation view when user taps "+" or "x" button on the top right corner
     private func changeNavigationModelContent() {
         let style = navigationModel.style
-        navigationModel.title = style == .addPillReminder ? "Add Medication" : "Today"
-        navigationModel.subtitle = style == .addPillReminder ? "Just a few taps below" : progressSubtitle
+        navigationModel.title = style == .addPillReminder ? NSLocalizedString("Add Medication", comment: "") : NSLocalizedString("Today", comment: "")
+        navigationModel.subtitle = style == .addPillReminder ? NSLocalizedString("Just a few taps below", comment: "") : progressSubtitle
     }
     
     /// Navigation content
     var navigationTitle: String {
         navigationModel.title
+        
     }
+   
     
     var navigationSubtitle: String {
         navigationModel.subtitle
@@ -38,7 +41,7 @@ class PillReminderViewModel: ObservableObject {
     }
     
     var progressSubtitle: String {
-        hasReminders ? "It's time for your meds" : "No medication saved"
+        hasReminders ? NSLocalizedString("It's time for your meds", comment: "") : NSLocalizedString("No medication saved", comment: "")
     }
     
     func reminders(forInterval interval: DailyTimeInterval) -> [ReminderModel] {
@@ -128,7 +131,7 @@ class PillReminderViewModel: ObservableObject {
         reminders.forEach { (reminder) in
             if let notificationComponents = reminder.notificationDate, !UserDefaults.standard.bool(forKey: reminder.id) {
                 let content = UNMutableNotificationContent()
-                content.title = "It's time to take your \(reminder.pillName)"
+                content.title = NSLocalizedString("It's time to take your \(reminder.pillName)", comment: "")
                 content.sound = .default
                 let trigger = UNCalendarNotificationTrigger(dateMatching: notificationComponents, repeats: true)
                 let request = UNNotificationRequest(identifier: reminder.id, content: content, trigger: trigger)

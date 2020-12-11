@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  MedicationRemind
+
+  Created by JWSScott777 on 12/6/20.
+  
+*/
+
+
+"No Reminders" = "No Reminders";
+"You don't have any medication added to your list yet" = "You don't have any medication added to your list yet";
+"Is the time correct?" = "Is the time correct?";
+"Morning" = "Morning";
+"Noon" = "Noon";
+"Evening" = "Evening";
+"How many do you take?" = "How many do you take?";
+"Choose a pill icon" = "Choose a pill icon";
+"What's the medication?" = "What's the medication?";
+"Enter medication name here" = "Enter medication name here";
+"How often do you take it?" = "How often do you take it?";
+"OK" = "OK";
+"Add this Medication" = "Add this Medication";
+"Today" = "Today";
+"No medication saved" = "No medication saved";
+"Add Medication" = "Add Medication";
+"Just a few taps below" = "Just a few taps below";
+"It's time for your meds" = "It's time for your meds";
+"No medication saved" = "No medication saved";
+"It's time to take your" = "It's time to take your";
+"Great Job" = "Great Job";
+"Something's missing" = "Something's missing";
+"Your pill reminder has been added" = "Your pill reminder has been added";
+"Make sure you entered the pill name and selected a time" = "Make sure you entered the pill name and selected a time";
+"Take" = "Take";
+"Pill" = "Pill";
+"Dose" = "Dose";
+
+

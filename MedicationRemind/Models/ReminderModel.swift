@@ -10,7 +10,7 @@ enum PillType: String, CaseIterable {
     case orange = "regular_orange"
     case polygon = "polygon_blue"
     case red = "regular_red"
-    case other = "other"
+    case Needle = "Needle"
 }
 
 /// Daily time interval
@@ -80,7 +80,7 @@ class ReminderModel: ObservableObject, Identifiable {
     
     /// Formatted dosage
     var formattedDosage: String {
-        "Take \(pillDosage) pill\(pillDosage > 1 ? "s" : "")"
+        NSLocalizedString("Take \(pillDosage) Dose\(pillDosage > 1 ? "s" : "")", comment: "")
     }
     
     /// Return dictionary from the model

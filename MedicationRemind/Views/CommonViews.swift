@@ -13,9 +13,9 @@ struct CustomView: View {
                 .frame(height: 50)
             DropDownSelector(label: "Is the time correct?")
             HStack {
-                DropDownSelector(label: "8:00 AM", title: "Morning")
-                DropDownSelector(label: "12:00 PM", title: "Noon")
-                DropDownSelector(label: "8:00 AM", title: "Evening")
+                DropDownSelector(label: "8:00 AM", title: NSLocalizedString("Morning", comment: ""))
+                DropDownSelector(label: "12:00 PM", title: NSLocalizedString("Noon", comment: ""))
+                DropDownSelector(label: "8:00 AM", title: NSLocalizedString("Evening", comment: ""))
             }
             InputStepper(viewModel: AddPillViewModel())
             PillTypeSelector(viewModel: AddPillViewModel())
@@ -79,6 +79,7 @@ struct Triangle: Shape {
 
 /// Drop down selection for 'add a pill' screen
 struct DropDownSelector: View {
+    
     var label: String
     var title: String?
     var didSelect: (() -> Void)?

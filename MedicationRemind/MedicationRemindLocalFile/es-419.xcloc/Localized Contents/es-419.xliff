@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="MedicationRemind/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es-419">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.1.1" build-num="12A7605b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>MedicationRemind</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="MedicationRemind/en.lproj/Localizable.strings" source-language="en" target-language="es-419" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.1.1" build-num="12A7605b"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Medication" xml:space="preserve">
+        <source>Add Medication</source>
+        <target>Agregar medicación</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add this Medication" xml:space="preserve">
+        <source>Add this Medication</source>
+        <target>Agregar este medicamento</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose a pill icon" xml:space="preserve">
+        <source>Choose a pill icon</source>
+        <target>Elija un icono de píldora</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter medication name here" xml:space="preserve">
+        <source>Enter medication name here</source>
+        <target>Ingrese el nombre del medicamento aquí</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Evening" xml:space="preserve">
+        <source>Evening</source>
+        <target>Noche</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Great Job" xml:space="preserve">
+        <source>Great Job</source>
+        <target>Gran trabajo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hello, World!" xml:space="preserve">
+        <source>Hello, World!</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How many do you take?" xml:space="preserve">
+        <source>How many do you take?</source>
+        <target>Cuantos tomas</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="How often do you take it?" xml:space="preserve">
+        <source>How often do you take it?</source>
+        <target>¿Con qué frecuencia lo toma?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Is the time correct?" xml:space="preserve">
+        <source>Is the time correct?</source>
+        <target>¿Es la hora correcta?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="It's time for your meds" xml:space="preserve">
+        <source>It's time for your meds</source>
+        <target>Es hora de tus medicinas</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="It's time to take your" xml:space="preserve">
+        <source>It's time to take your</source>
+        <target>Es hora de tomar tu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Just a few taps below" xml:space="preserve">
+        <source>Just a few taps below</source>
+        <target>Solo unos pocos toques debajo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Make sure you entered the pill name and selected a time" xml:space="preserve">
+        <source>Make sure you entered the pill name and selected a time</source>
+        <target>Asegúrese de ingresar el nombre de la píldora y seleccionar una hora</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Morning" xml:space="preserve">
+        <source>Morning</source>
+        <target>Mañana</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No Reminders" xml:space="preserve">
+        <source>No Reminders</source>
+        <target>Sin recordatorios</target>
+        <note>Localizable.strings
+  MedicationRemind
+
+  Created by JWSScott777 on 12/6/20.</note>
+      </trans-unit>
+      <trans-unit id="No medication saved" xml:space="preserve">
+        <source>No medication saved</source>
+        <target>No se guardó ningún medicamento</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Noon" xml:space="preserve">
+        <source>Noon</source>
+        <target>Mediodía</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>Okay</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Something's missing" xml:space="preserve">
+        <source>Something's missing</source>
+        <target>Algo falta, algo está faltando</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <target>Hoy</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What's the medication?" xml:space="preserve">
+        <source>What's the medication?</source>
+        <target>¿Cuál es la medicación?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You don't have any medication added to your list yet" xml:space="preserve">
+        <source>You don't have any medication added to your list yet</source>
+        <target>Aún no tiene ningún medicamento agregado a su lista</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your pill reminder has been added" xml:space="preserve">
+        <source>Your pill reminder has been added</source>
+        <target>Se agregó su recordatorio de píldoras</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -7,6 +7,8 @@ import Foundation
 class AddPillViewModel: ObservableObject {
     @Published private var addPillModel = ReminderModel.buildDefaultModel()
     
+    
+    
     /// Set when the pill was added to the list
     var addedPill: Bool = false
     
@@ -19,11 +21,11 @@ class AddPillViewModel: ObservableObject {
     }
     
     var alertTitle: String {
-        addedPill ? "Great Job" : "Something's missing"
+        addedPill ? NSLocalizedString("Great Job", comment: "") : NSLocalizedString("Something's missing", comment: "")
     }
     
     var alertMessage: String {
-        addedPill ? "Your pill reminder has been added" : "Make sure you entered the pill name and selected a time"
+        addedPill ? NSLocalizedString("Your pill reminder has been added", comment: "") : NSLocalizedString("Make sure you entered the pill name and selected a time", comment: "")
     }
     
     var dateRange: ClosedRange<Date> {
